@@ -102,7 +102,7 @@
   },
   "5.1.16": {
    "date": "2026-11-01",
-   "note": "修复提案类操作（确认保留/淘汰）一律报「候选已变化」——targeted 复算按卡对重算 issue_id，与传入的提案 id 前缀不同必判 stale。新增 memauditapply 批量提交（items，每行 issue_id|action|合并正文，最多20条）、memaudit 为新事实附最像的旧事实对照（related）、冲突行可在页面直接「确认保留原卡（结案）」、标签键机械归一化不再锁死合并。修复未启用 FunctionCaller 的角色后台自动整理启动时空引用崩溃。",
+   "note": "修复提案类操作（确认保留/淘汰）一律报「候选已变化」——targeted 复算按卡对重算 issue_id，与传入的提案 id 前缀不同必判 stale。新增 memauditapply 批量提交（items，每行 issue_id|action|合并正文，最多20条）、memaudit 为新事实附最像的旧事实对照（related）、冲突行可在页面直接「确认保留原卡（结案）」、标签键机械归一化不再锁死合并。修复未启用 FunctionCaller 的角色后台自动整理启动时空引用崩溃。适配新版框架：插件只依赖 Alife.Foundation、Alife.Framework、FunctionCaller、SemanticKernel、Components 几处，已在新版框架（本地 Framework/Foundation 2026-11-01 构建）下编译运行通过。",
    "file": "https://github.com/chickensoupwhite/Alife-MemoryInject/releases/download/v5.1.16/Mao.MemoryInject_5.1.16.zip"
   }
  }
