@@ -2,7 +2,7 @@
   "id": "BDFFZI.MaoMao.BiliManager",
   "name": "真央的B站管理",
   "author": "BDFFZI",
-  "description": "管理B站账号：查看稿件与数据、读取和回复评论、投稿视频等，让AI自己当UP主。需先配置B站cookie登录。",
+  "description": "管理B站账号：搜索视频、读评论弹幕、发评论（支持真@与删除）、点赞投币收藏关注、发动态私信、投稿视频、视频抽帧（自动下载ffmpeg）等，让AI自己当UP主亲眼看视频。需先配置B站cookie登录。",
   "tags": [
     "B站",
     "直播",
@@ -26,7 +26,57 @@
     "1.1.0": {
       "date": "2026-10-27T00:32:00",
       "note": "feat: B站账号管理（稿件数据/评论回复/投稿视频），需配置cookie",
-      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.1.0.zip",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.1.0.zip"
+    },
+    "1.3.0": {
+      "date": "2026-11-20T13:00:00",
+      "note": "feat: 新增Frames视频抽帧（下载视频均匀抽帧拼网格图，用LoadImage亲眼看视频内容）；ffmpeg多镜像自动下载；真@评论（@uid渲染）；删评论；弹幕deflate解析修复；搜索412风控修复；硬编码路径清零开箱即用",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.3.0.zip"
+    },
+    "1.6.2": {
+      "date": "2026-11-22T13:10:00",
+      "note": "feat: 投稿全链路（分区查询/视频上传/封面上传/提交稿件）；601风控明确提示；登录改两步式（Login出码+LoginPoll轮询），适配B站新版回调无SESSDATA参数，跟随重定向收凭据；大视频分片下载防中断",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.6.2.zip"
+    },
+    "1.6.3": {
+      "date": "2026-11-22T13:38:00",
+      "note": "fix: 投稿上传修复——preupload改回老upos线参数(ugcupos/bup)，commit补biz_id/uploadId参数，全链路实测通过（上传21秒+封面+投稿成功）",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.6.3.zip"
+    },
+    "1.6.4": {
+      "date": "2026-11-22T13:48:36",
+      "note": "feat: 模块页新增账号卡片UI（头像/昵称/等级/硬币+退出登录+扫码登录按钮，二维码base64内嵌）；移除无意义PythonExe配置",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.6.4.zip"
+    },
+    "1.6.5": {
+      "date": "2026-11-22T13:50:06",
+      "note": "fix: 扫码UI交互优化——展示二维码时隐藏登录按钮，扫码成功自动刷新登录态，过期自动清码",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.6.5.zip"
+    },
+    "1.6.6": {
+      "date": "2026-11-22T13:57:20",
+      "note": "fix: 模块页登录态秒显（跨打开缓存）+加载中提示，不再先闪未登录",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.6.6.zip"
+    },
+    "1.6.7": {
+      "date": "2026-11-22T13:59:38",
+      "note": "fix: 退出登录立即清除缓存并切换未登录态（修扫码时仍显示旧账号）；所有操作加旋转加载动画，不再像卡住",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.6.7.zip"
+    },
+    "1.6.8": {
+      "date": "2026-11-22T14:29:00",
+      "note": "feat: 新增私信全链路（sessions会话列表/msgs读历史/pm发私信）；fix: send_private_msg端点改为api.vc域+content包JSON串（修复一直-400）；dev_id按规范生成",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.6.8.zip"
+    },
+    "1.6.9": {
+      "date": "2026-11-22T14:36:30",
+      "note": "fix: 发动态端点改为dynamic_svr/create（旧feed/dyn/send 404）；comments/reply/delete_comment支持直接传BV号；全函数自测通过",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.6.9.zip"
+    },
+    "1.8.4": {
+      "date": "2026-11-25T21:42:31",
+      "note": "fix: python脚本路径改由插件系统解析，修复装在非默认目录时报“脚本文件不存在”导致插件无法工作；发布包剔除含cookie的本地账号文件",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/BDFFZI.MaoMao.BiliManager/1.8.4.zip",
       "dependencies": null,
       "environments": null
     }

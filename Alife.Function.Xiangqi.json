@@ -1,0 +1,44 @@
+{
+  "id": "Alife.Function.Xiangqi",
+  "name": "中国象棋",
+  "author": "Alife官方",
+  "description": "让角色可以与用户或其他角色对弈中国象棋，轮到自己时通过工具落子。",
+  "tags": [
+    "官方",
+    "桌游",
+    "象棋"
+  ],
+  "platforms": ["Windows", "Android"],
+  "source": "https://github.com/BDFFZI/Alife",
+  "dependencies": {
+    "Alife.Function.FunctionCaller": "",
+    "Alife.Function.TableGame": ""
+  },
+  "releases": {
+    "5.0.4": {
+      "date": "2026-11-22 21:27:52",
+      "note": "fix: 修复热重载后音效脚本可能未重新注入的问题",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Xiangqi/5.0.4.zip"
+    },
+    "5.0.3": {
+      "date": "2026-11-22 18:49:00",
+      "note": "fix: 将桌游入口移入统一游戏中心菜单",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Xiangqi/5.0.3.zip"
+    },
+    "5.0.2": {
+      "date": "2026-11-22 16:28:08",
+      "note": "fix: 修复对局结束时 AI 看不到结束局势的问题",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Xiangqi/5.0.2.zip"
+    },
+    "5.0.1": {
+      "date": "2026-11-20 21:20:42",
+      "note": "fix: 结算页新增「结束对局」按钮",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Xiangqi/5.0.1.zip"
+    },
+    "5.0.0": {
+      "date": "2026-11-20 19:54:27",
+      "note": "feat: 重做为 3D 全屏桌游界面，支持网页与宿主界面\nfeat: 支持音效与 BGM 开关\nfeat: 提供完整 AI 控制接口，支持 AI 自主开局与对局\nfeat: 增加坐标提示与吃子提示音",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Xiangqi/5.0.0.zip"
+    }
+  }
+}

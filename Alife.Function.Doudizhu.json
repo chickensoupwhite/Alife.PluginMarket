@@ -1,0 +1,49 @@
+{
+  "id": "Alife.Function.Doudizhu",
+  "name": "斗地主",
+  "author": "Alife官方",
+  "description": "让角色可以与用户或其他角色同桌斗地主，轮到自己时通过工具叫地主、出牌或不出。",
+  "tags": [
+    "官方",
+    "桌游",
+    "斗地主"
+  ],
+  "platforms": ["Windows", "Android"],
+  "source": "https://github.com/BDFFZI/Alife",
+  "dependencies": {
+    "Alife.Function.FunctionCaller": "",
+    "Alife.Function.TableGame": ""
+  },
+  "releases": {
+    "5.0.5": {
+      "date": "2026-11-22 21:27:52",
+      "note": "fix: 修复热重载后音效脚本可能未重新注入的问题",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Doudizhu/5.0.5.zip"
+    },
+    "5.0.4": {
+      "date": "2026-11-22 18:49:00",
+      "note": "fix: 将桌游入口移入统一游戏中心菜单",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Doudizhu/5.0.4.zip"
+    },
+    "5.0.3": {
+      "date": "2026-11-22 16:28:08",
+      "note": "fix: 修复牌局结束时 AI 看不到结束局势的问题",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Doudizhu/5.0.3.zip"
+    },
+    "5.0.2": {
+      "date": "2026-11-20 21:20:42",
+      "note": "fix: 结算页新增「结束牌局」按钮",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Doudizhu/5.0.2.zip"
+    },
+    "5.0.1": {
+      "date": "2026-11-20 19:59:09",
+      "note": "fix: 新增牌桌内「无法执行」提示条，2.5 秒自动消失且不拦截鼠标\nfix: 出牌/不出按钮在人类回合始终可点击，点击后给出具体原因\nfix: 覆盖未选牌、非法牌型、压不住、非本回合、首家必须出牌等提示",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Doudizhu/5.0.1.zip"
+    },
+    "5.0.0": {
+      "date": "2026-11-20 19:54:27",
+      "note": "feat: 重做为 3D 全屏桌游界面，支持网页与宿主界面\nfeat: 支持音效与 BGM 开关\nfeat: 提供完整 AI 控制接口，支持 AI 自主开局与对局\nfeat: 增加随机先手、结算与再来一局\nfeat: 修复手牌与按钮间距\nfeat: 增加「轮到你」高亮提示与换人弹出动画",
+      "file": "https://github.com/BDFFZI/Alife.OfficialPluginStorage/raw/refs/heads/main/Alife.Function.Doudizhu/5.0.0.zip"
+    }
+  }
+}
